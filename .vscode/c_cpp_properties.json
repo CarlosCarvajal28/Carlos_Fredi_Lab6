@@ -21,6 +21,7 @@
                 "C:/Users/fredi/.platformio/packages/framework-zephyr/_pio/modules/hal/stm32/stm32cube/stm32f0xx/drivers/include",
                 "C:/Users/fredi/.platformio/packages/framework-zephyr/_pio/modules/hal/stm32/stm32cube/stm32f0xx/drivers/include/Legacy",
                 "C:/Users/fredi/.platformio/packages/framework-zephyr/_pio/modules/hal/stm32/stm32cube/common_ll/include",
+                "C:/Users/fredi/Documents/coursework/ece-6960/platformio-projects/lab-06/Carlos_Fredi_Lab6/.pio/libdeps/disco_f072rb/Unity/src",
                 ""
             ],
             "browse": {
@@ -39,6 +40,7 @@
                     "C:/Users/fredi/.platformio/packages/framework-zephyr/_pio/modules/hal/stm32/stm32cube/stm32f0xx/drivers/include",
                     "C:/Users/fredi/.platformio/packages/framework-zephyr/_pio/modules/hal/stm32/stm32cube/stm32f0xx/drivers/include/Legacy",
                     "C:/Users/fredi/.platformio/packages/framework-zephyr/_pio/modules/hal/stm32/stm32cube/common_ll/include",
+                    "C:/Users/fredi/Documents/coursework/ece-6960/platformio-projects/lab-06/Carlos_Fredi_Lab6/.pio/libdeps/disco_f072rb/Unity/src",
                     ""
                 ]
             },
