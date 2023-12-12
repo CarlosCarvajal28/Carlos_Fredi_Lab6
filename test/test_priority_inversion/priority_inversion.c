@@ -5,9 +5,9 @@
 
 #define STACKSIZE 2000;
 
-K_THREAD_STACK_DEFINE(primary_stack,STACKSIZE);
-K_THREAD_STACK_DEFINE(secondary_stack,STACKSIZE);
-K_THREAD_STACK_DEFINE(super_stack,STACKSIZE);
+K_THREAD_STACK_DEFINE(primary_stack, STACKSIZE);
+K_THREAD_STACK_DEFINE(secondary_stack, STACKSIZE);
+K_THREAD_STACK_DEFINE(super_stack, STACKSIZE);
 
 struct k_thread primary_thread, secondary_thread, super_thread;
 struct k_sem semaphore;
@@ -92,9 +92,7 @@ void sec_entry(struct k_sem semaphore){//lower priority
 
 }
 
-
-
-int main(){
+int main(void){
     UNITY_BEGIN();
 
     RUN_TEST(test_prio_inv);
