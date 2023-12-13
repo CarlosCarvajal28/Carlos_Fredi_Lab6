@@ -281,7 +281,7 @@ void diff_coop_busy_busy_high(void)
                     NULL,
                     super_prio,
                     0,
-                    K_MSEC(100)
+                    K_MSEC(1000)
                     );
 
     k_thread_create(&primary_thread, 
@@ -305,10 +305,10 @@ void diff_coop_busy_busy_high(void)
                     NULL,
                     K_PRIO_COOP(3),
                     0,
-                    K_MSEC(15)
+                    K_MSEC(150)
                     );
 
-    k_thread_join(&super_thread, K_MSEC(150));
+    k_thread_join(&super_thread, K_MSEC(1000));
 
     k_thread_runtime_stats_get(&primary_thread, &pri_stats);
     k_thread_runtime_stats_get(&secondary_thread, &sec_stats);
@@ -341,7 +341,7 @@ void diff_coop_busy_busy_low(void)
                     NULL,
                     super_prio,
                     0,
-                    K_MSEC(100)
+                    K_MSEC(1000)
                     );
 
     k_thread_create(&primary_thread, 
@@ -353,7 +353,7 @@ void diff_coop_busy_busy_low(void)
                     NULL,
                     K_PRIO_COOP(3),
                     0,
-                    K_MSEC(10)
+                    K_MSEC(100)
                     );
 
     k_thread_create(&secondary_thread, 
@@ -368,7 +368,7 @@ void diff_coop_busy_busy_low(void)
                     K_MSEC(15)
                     );
 
-    k_thread_join(&super_thread, K_MSEC(150));
+    k_thread_join(&super_thread, K_MSEC(1500));
 
     k_thread_runtime_stats_get(&primary_thread, &pri_stats);
     k_thread_runtime_stats_get(&secondary_thread, &sec_stats);
@@ -401,7 +401,7 @@ void diff_coop_busy_yield_high(void)
                     NULL,
                     super_prio,
                     0,
-                    K_MSEC(100)
+                    K_MSEC(1000)
                     );
 
     k_thread_create(&primary_thread, 
@@ -425,10 +425,10 @@ void diff_coop_busy_yield_high(void)
                     NULL,
                     K_PRIO_COOP(3),
                     0,
-                    K_MSEC(15)
+                    K_MSEC(150)
                     );
 
-    k_thread_join(&super_thread, K_MSEC(150));
+    k_thread_join(&super_thread, K_MSEC(1500));
 
     k_thread_runtime_stats_get(&primary_thread, &pri_stats);
     k_thread_runtime_stats_get(&secondary_thread, &sec_stats);
@@ -461,7 +461,7 @@ void diff_coop_busy_yield_low(void)
                     NULL,
                     super_prio,
                     0,
-                    K_MSEC(100)
+                    K_MSEC(1000)
                     );
 
     k_thread_create(&primary_thread, 
@@ -473,7 +473,7 @@ void diff_coop_busy_yield_low(void)
                     NULL,
                     K_PRIO_COOP(3),
                     0,
-                    K_MSEC(10)
+                    K_MSEC(100)
                     );
 
     k_thread_create(&secondary_thread, 
@@ -488,7 +488,7 @@ void diff_coop_busy_yield_low(void)
                     K_MSEC(15)
                     );
 
-    k_thread_join(&super_thread, K_MSEC(150));
+    k_thread_join(&super_thread, K_MSEC(1500));
 
     k_thread_runtime_stats_get(&primary_thread, &pri_stats);
     k_thread_runtime_stats_get(&secondary_thread, &sec_stats);
@@ -522,7 +522,7 @@ void diff_preempt_busy_busy_high(void)
                     NULL,
                     super_prio,
                     0,
-                    K_MSEC(100)
+                    K_MSEC(1000)
                     );
 
     k_thread_create(&primary_thread, 
@@ -546,10 +546,10 @@ void diff_preempt_busy_busy_high(void)
                     NULL,
                     K_PRIO_PREEMPT(3),
                     0,
-                    K_MSEC(15)
+                    K_MSEC(150)
                     );
 
-    k_thread_join(&super_thread, K_MSEC(150));
+    k_thread_join(&super_thread, K_MSEC(1500));
 
     k_thread_runtime_stats_get(&primary_thread, &pri_stats);
     k_thread_runtime_stats_get(&secondary_thread, &sec_stats);
@@ -582,7 +582,7 @@ void diff_preempt_busy_busy_low(void)
                     NULL,
                     super_prio,
                     0,
-                    K_MSEC(100)
+                    K_MSEC(1000)
                     );
 
     k_thread_create(&primary_thread, 
@@ -594,7 +594,7 @@ void diff_preempt_busy_busy_low(void)
                     NULL,
                     K_PRIO_PREEMPT(3),
                     0,
-                    K_MSEC(10)
+                    K_MSEC(100)
                     );
 
     k_thread_create(&secondary_thread, 
@@ -609,7 +609,7 @@ void diff_preempt_busy_busy_low(void)
                     K_MSEC(15)
                     );
 
-    k_thread_join(&super_thread, K_MSEC(150));
+    k_thread_join(&super_thread, K_MSEC(1500));
 
     k_thread_runtime_stats_get(&primary_thread, &pri_stats);
     k_thread_runtime_stats_get(&secondary_thread, &sec_stats);
@@ -642,7 +642,7 @@ void diff_preempt_busy_yield_high(void)
                     NULL,
                     super_prio,
                     0,
-                    K_MSEC(100)
+                    K_MSEC(1000)
                     );
 
     k_thread_create(&primary_thread, 
@@ -666,10 +666,10 @@ void diff_preempt_busy_yield_high(void)
                     NULL,
                     K_PRIO_PREEMPT(3),
                     0,
-                    K_MSEC(15)
+                    K_MSEC(150)
                     );
 
-    k_thread_join(&super_thread, K_MSEC(150));
+    k_thread_join(&super_thread, K_MSEC(1500));
 
     k_thread_runtime_stats_get(&primary_thread, &pri_stats);
     k_thread_runtime_stats_get(&secondary_thread, &sec_stats);
@@ -702,7 +702,7 @@ void diff_preempt_busy_yield_low(void)
                     NULL,
                     super_prio,
                     0,
-                    K_MSEC(100)
+                    K_MSEC(1000)
                     );
 
     k_thread_create(&primary_thread, 
@@ -714,7 +714,7 @@ void diff_preempt_busy_yield_low(void)
                     NULL,
                     K_PRIO_PREEMPT(3),
                     0,
-                    K_MSEC(10)
+                    K_MSEC(100)
                     );
 
     k_thread_create(&secondary_thread, 
@@ -729,7 +729,7 @@ void diff_preempt_busy_yield_low(void)
                     K_MSEC(15)
                     );
 
-    k_thread_join(&super_thread, K_MSEC(150));
+    k_thread_join(&super_thread, K_MSEC(1500));
 
     k_thread_runtime_stats_get(&primary_thread, &pri_stats);
     k_thread_runtime_stats_get(&secondary_thread, &sec_stats);
