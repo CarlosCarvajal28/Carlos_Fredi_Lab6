@@ -1,0 +1,1 @@
+ECE 6960 Lab 6: Carlos Carvajal and Fredi Mino ![example workflow](https://github.com/CarlosCarvajal28/Carlos_Fredi_Lab6/actions/workflows/main.yml/badge.svg)
